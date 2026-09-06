@@ -62,7 +62,7 @@ contactForm.addEventListener('submit', (e) => {
     `Meddelande:\n${message || '—'}`
   );
 
-  window.location.href = `mailto:info@smarthemskane.se?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:smarthemskane@gmail.com?subject=${subject}&body=${body}`;
 
   formStatus.textContent = 'Din e-postklient öppnas — skicka meddelandet därifrån.';
   formStatus.className = 'form-status form-status--success';
