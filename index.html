@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart hem, säkerhet och trädgård i Lund, Malmö och Skåne. Home Assistant, bevattning, kameror, energioptimering och installation.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smarthemskane.se/">
+  <title>Smart Hem Skåne — Konsultation &amp; Installation</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="Smart Hem Skåne">
+  <meta property="og:title" content="Smart Hem Skåne — Konsultation &amp; Installation">
+  <meta property="og:description" content="Smart hem, säkerhet och trädgård i Lund, Malmö och Skåne. Home Assistant, bevattning, kameror och energioptimering.">
+  <meta property="og:url" content="https://smarthemskane.se/">
+  <meta property="og:image" content="https://smarthemskane.se/favicon.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smart Hem Skåne — Konsultation &amp; Installation">
+  <meta name="twitter:description" content="Smart hem, säkerhet och trädgård i Lund, Malmö och Skåne.">
+  <meta name="twitter:image" content="https://smarthemskane.se/favicon.svg">
+
+  <!-- Google Search Console: ersätt content-värdet efter verifiering -->
+  <!-- <meta name="google-site-verification" content="DIN_KOD_HÄR"> -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smart Hem Skåne",
+    "url": "https://smarthemskane.se",
+    "email": "info@smarthemskane.se",
+    "telephone": "+46721951018",
+    "image": "https://smarthemskane.se/favicon.svg",
+    "description": "Smart hem-konsultation och installation i Lund, Malmö och Skåne. Home Assistant, energioptimering, smart säkerhet och trädgårdsbevattning.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lund",
+      "addressRegion": "Skåne",
+      "addressCountry": "SE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Lund" },
+      { "@type": "City", "name": "Malmö" },
+      { "@type": "AdministrativeArea", "name": "Skåne" }
+    ],
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="2" y="10" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M14 4L4 10h20L14 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="14" cy="18" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo__text">Smart Hem <strong>Skåne</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Huvudnavigation">
+        <a href="#tjanster" class="nav__link">Tjänster</a>
+        <a href="#guide" class="nav__link">Guide</a>
+        <a href="#sakerhet" class="nav__link">Säkerhet</a>
+        <a href="#tradgard" class="nav__link">Trädgård</a>
+        <a href="#paket" class="nav__link">Paket</a>
+        <a href="#process" class="nav__link">Så jobbar vi</a>
+        <a href="#omraden" class="nav__link">Områden</a>
+        <a href="#kontakt" class="nav__link nav__link--cta">Boka konsultation</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Lund · Malmö · Hela Skåne
+          </p>
+          <h1 class="hero__title">
+            Smarta hem som <em>sparar energi</em> och förenklar vardagen
+          </h1>
+          <p class="hero__desc">
+            Vi designar och installerar smarta hem oberoende av märke — Plejd, Shelly, IKEA, Philips Hue, Tibber och fler — samlat i Home Assistant. Energi, säkerhet, trädgård och lokal kontroll.
+          </p>
+          <div class="hero__actions">
+            <a href="#kontakt" class="btn btn--primary">Gratis konsultation</a>
+            <a href="#paket" class="btn btn--ghost">Se våra paket</a>
+          </div>
+          <ul class="hero__trust">
+            <li>Home Assistant &amp; Matter</li>
+            <li>ROT/RUT-avdrag</li>
+            <li>Smart säkerhet &amp; sensorer</li>
+            <li>Certifierad elpartner</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="dashboard">
+            <div class="dashboard__header">
+              <span class="dashboard__title">Energiöversikt</span>
+              <span class="dashboard__live">Live</span>
+            </div>
+            <div class="dashboard__stats">
+              <div class="stat">
+                <span class="stat__label">El idag</span>
+                <span class="stat__value">12.4 <small>kWh</small></span>
+                <span class="stat__change stat__change--down">−18%</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Spotpris</span>
+                <span class="stat__value">0.42 <small>kr/kWh</small></span>
+                <span class="stat__change stat__change--neutral">SE3</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Värmepump</span>
+                <span class="stat__value">21° <small>C</small></span>
+                <span class="stat__change stat__change--down">Eco</span>
+              </div>
+            </div>
+            <div class="dashboard__chart">
+              <div class="bar" style="--h: 45%"></div>
+              <div class="bar" style="--h: 62%"></div>
+              <div class="bar" style="--h: 38%"></div>
+              <div class="bar" style="--h: 71%"></div>
+              <div class="bar" style="--h: 55%"></div>
+              <div class="bar" style="--h: 48%"></div>
+              <div class="bar" style="--h: 35%"></div>
+              <div class="bar bar--active" style="--h: 28%"></div>
+            </div>
+            <div class="dashboard__devices">
+              <span class="device device--on">Belysning</span>
+              <span class="device device--on">Värmepump</span>
+              <span class="device">Laddbox</span>
+              <span class="device device--on">Sensorer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tjanster">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Tjänster</span>
+          <h2 class="section__title">Allt du behöver för ett smartare hem</h2>
+          <p class="section__desc">Från första idé till färdigt system — energi, säkerhet, trädgård och integritet i ett.</p>
+        </header>
+
+        <div class="services">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3L2 9l10 6 10-6-10-6z"/><path d="M2 15l10 6 10-6M2 12l10 6 10-6"/></svg>
+            </div>
+            <h3 class="service-card__title">Smart hem-design</h3>
+            <p class="service-card__text">Vi kartlägger ditt hem, dina behov och budget. Du får en tydlig plan med rätt protokoll (Matter, Zigbee, Thread) och enheter som fungerar ihop.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+            </div>
+            <h3 class="service-card__title">Home Assistant-setup</h3>
+            <p class="service-card__text">Installation och konfiguration av Home Assistant — din lokala hubb som samlar belysning, värme, sensorer och elbil i ett gränssnitt.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </div>
+            <h3 class="service-card__title">Enhetsintegration</h3>
+            <p class="service-card__text">Vi kopplar ihop enheter från alla märken — Plejd, Shelly, Philips Hue, IKEA, värmepumpar, Tibber m.fl. Allt styrs från en plats, utan att låsa in dig i ett ekosystem.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="service-card__title">Smart säkerhet</h3>
+            <p class="service-card__text">Kameror, rörelsesensorer, dörr/fönster-sensorer och smarta lås — integrerat i Home Assistant med notiser direkt till mobilen.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><path d="M12 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+            </div>
+            <h3 class="service-card__title">Smart trädgård &amp; bevattning</h3>
+            <p class="service-card__text">Automatisk bevattning styrd av väder, jordfuktighet och scheman — kopplat till Home Assistant. Perfekt för villa och sommarstuga.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="service-card__title">Energioptimering</h3>
+            <p class="service-card__text">Automatisera utifrån spotpris, schemalägg värmepump och belysning, och få insikt i din förbrukning. Spara pengar varje månad.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="service-card__title">Felsökning &amp; support</h3>
+            <p class="service-card__text">Något slutat fungera? Vi felsöker automationer, nätverk och enheter — på plats i Skåne eller via fjärrsupport.</p>
+          </article>
+
+          <article class="service-card service-card--highlight">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 class="service-card__title">Elinstallation via partner</h3>
+            <p class="service-card__text">Fasta elinstallationer (Plejd, Shelly, laddbox) utförs av vår certifierade elpartner — med ROT-avdrag direkt på fakturan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="guide">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Guide</span>
+          <h2 class="section__title">Behöver jag Home Assistant — eller räcker en smart plug?</h2>
+          <p class="section__desc">En vanlig kaffebryggare kan inte kopplas direkt till Home Assistant. Men med rätt lösning kan du styra det mesta — fråga bara hur mycket du vill automatisera.</p>
+        </header>
+
+        <div class="guide-flow" aria-label="Så kopplas en enkel apparat till smart styrning">
+          <div class="guide-flow__step">
+            <span class="guide-flow__icon">☕</span>
+            <span class="guide-flow__label">Vanlig apparat</span>
+            <span class="guide-flow__hint">Kaffebryggare, lampa, fläkt</span>
+          </div>
+          <span class="guide-flow__arrow" aria-hidden="true">→</span>
+          <div class="guide-flow__step guide-flow__step--bridge">
+            <span class="guide-flow__icon">🔌</span>
+            <span class="guide-flow__label">Smart brygga</span>
+            <span class="guide-flow__hint">Smart plug, Shelly, IKEA, Plejd m.fl.</span>
+          </div>
+          <span class="guide-flow__arrow" aria-hidden="true">→</span>
+          <div class="guide-flow__step guide-flow__step--optional">
+            <span class="guide-flow__icon">🏠</span>
+            <span class="guide-flow__label">Home Assistant</span>
+            <span class="guide-flow__hint">Valfritt — samlar allt</span>
+          </div>
+        </div>
+
+        <div class="guide-compare">
+          <article class="guide-card">
+            <span class="guide-card__tag">Enklaste vägen</span>
+            <h3 class="guide-card__title">Smart plug räcker</h3>
+            <p class="guide-card__intro">Du styr direkt via enhetens egen app — utan Home Assistant Green.</p>
+            <ul class="guide-card__list">
+              <li>1–3 enheter (t.ex. kaffebryggare, lampa)</li>
+              <li>Barndiz/fik från mobilen</li>
+              <li>Enkla scheman i appen</li>
+              <li>Låg budget (~200 kr/enhet)</li>
+            </ul>
+            <p class="guide-card__example"><strong>Exempel:</strong> Shelly Plug S → Shelly-appen → slå på kaffet kl. 07:00</p>
+          </article>
+
+          <article class="guide-card guide-card--featured">
+            <span class="guide-card__tag">Hela hemmet</span>
+            <h3 class="guide-card__title">Home Assistant behövs</h3>
+            <p class="guide-card__intro">När flera märken ska samarbeta — eller du vill spara el automatiskt.</p>
+            <ul class="guide-card__list">
+              <li>5+ enheter från olika märken</li>
+              <li>Spotpris styr diskmaskin, värme &amp; laddning</li>
+              <li>Sensorer + belysning + värmepump tillsammans</li>
+              <li>En app, lokal kontroll, ingen molnlåsning</li>
+            </ul>
+            <p class="guide-card__example"><strong>Exempel:</strong> Tibber spotpris &lt; 0,40 kr → starta diskmaskin + sänk värmepump + tänd köksbelysning</p>
+          </article>
+        </div>
+
+        <div class="guide-table-wrap">
+          <table class="guide-table">
+            <thead>
+              <tr>
+                <th scope="col">Funktion</th>
+                <th scope="col">Bara smart plug</th>
+                <th scope="col">Med Home Assistant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Slå på/av vanlig apparat</td>
+                <td><span class="guide-yes">✓</span></td>
+                <td><span class="guide-yes">✓</span></td>
+              </tr>
+              <tr>
+                <td>Flera märken i en app</td>
+                <td><span class="guide-no">✗</span></td>
+                <td><span class="guide-yes">✓</span></td>
+              </tr>
+              <tr>
+                <td>Automation med spotpris</td>
+                <td><span class="guide-no">✗</span></td>
+                <td><span class="guide-yes">✓</span></td>
+              </tr>
+              <tr>
+                <td>Sensor styr belysning</td>
+                <td><span class="guide-limited">Begränsat</span></td>
+                <td><span class="guide-yes">✓</span></td>
+              </tr>
+              <tr>
+                <td>Fungerar utan internet</td>
+                <td><span class="guide-limited">Delvis</span></td>
+                <td><span class="guide-yes">✓</span></td>
+              </tr>
+              <tr>
+                <td>Startkostnad</td>
+                <td>~200 kr</td>
+                <td>~2 200 kr + enheter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="guide-cta">
+          Osäker på vad som passar ditt hem? <a href="#kontakt">Boka en gratis konsultation</a> — vi rekommenderar rätt nivå utan att sälja mer än du behöver.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="sakerhet">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Smart säkerhet</span>
+          <h2 class="section__title">Trygghet som integreras i ditt smarta hem</h2>
+          <p class="section__desc">Sensorer, kameror och notiser — utan att låsa in dig i Verisure eller Sector. Vi installerar och kopplar allt till Home Assistant.</p>
+        </header>
+
+        <div class="security-grid">
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">📷</span>
+            <h3>Övervakningskameror</h3>
+            <p>Reolink, Frigate m.fl. — live-vy och inspelning i ditt eget nätverk, inte i molnet.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">🚪</span>
+            <h3>Dörr &amp; fönster</h3>
+            <p>Aqara, IKEA — få notis när dörr eller fönster öppnas, även när du inte är hemma.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">👁</span>
+            <h3>Rörelse &amp; automation</h3>
+            <p>Tänd belysning vid rörelse, aktivera sirena eller skicka push-notis till hela familjen.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">🔐</span>
+            <h3>Smarta lås</h3>
+            <p>Yale, Nuki — lås upp via app, ge tillfällig åtkomst, koppla till närvaro och scener.</p>
+          </article>
+        </div>
+
+        <div class="security-package">
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Nytt paket</span>
+            <h3 class="price-card__name">Säkerhet Starter</h3>
+            <p class="price-card__desc">Grundläggande smart säkerhet — kameror, sensorer och notiser.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 7 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">+ material från ca 3 500 kr</p>
+            <ul class="price-card__features">
+              <li>1–2 IP-kameror (t.ex. Reolink)
+                <ul>
+                  <li>Montering &amp; nätverksanslutning</li>
+                  <li>Live-vy i Home Assistant</li>
+                </ul>
+              </li>
+              <li>2–4 sensorer (dörr, fönster, rörelse)</li>
+              <li>Push-notiser till mobilen</li>
+              <li>2 säkerhetsautomationer (t.ex. rörelse → lampa + notis)</li>
+              <li>Genomgång &amp; 30 dagars support</li>
+            </ul>
+            <p class="price-card__total">Typiskt totalt: ca 11 500–14 000 kr</p>
+            <a href="#kontakt" class="btn btn--primary btn--block">Begär offert</a>
+          </article>
+
+          <div class="security-aside">
+            <h3>Vad ingår — och vad gör vi inte</h3>
+            <ul class="security-aside__list security-aside__list--yes">
+              <li>Smart övervakning &amp; sensorer</li>
+              <li>Notiser &amp; automationer i Home Assistant</li>
+              <li>Lokal lagring — dina bilder stannar hemma</li>
+              <li>Utbyggbart med fler kameror &amp; sensorer</li>
+            </ul>
+            <ul class="security-aside__list security-aside__list--no">
+              <li>SSF-certifierat inbrottslarm</li>
+              <li>Koppling till larmcentral (Securitas m.fl.)</li>
+            </ul>
+            <p class="security-aside__note">Behöver du certifierat inbrottslarm? Vi samarbetar med certifierad partner — <a href="#kontakt">kontakta oss</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="tradgard">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Smart trädgård</span>
+          <h2 class="section__title">Bevattning som sköter sig själv</h2>
+          <p class="section__desc">Sluta vattna i onödan. Vi kopplar styrenhet, sensorer och väderdata till Home Assistant — så gräsmattan och rabatterna får rätt mängd vatten, vid rätt tid.</p>
+        </header>
+
+        <div class="security-grid">
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">💧</span>
+            <h3>Smart bevattning</h3>
+            <p>Gardena Smart, OpenSprinkler m.fl. — styr zoner, tider och varaktighet från mobilen.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">🌱</span>
+            <h3>Jordfuktighet</h3>
+            <p>Sensorer mäter fukt i jorden — vattna bara när det faktiskt behövs, inte enligt fast schema.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">🌦</span>
+            <h3>Väder &amp; prognos</h3>
+            <p>Regn på gång? Automation pausar bevattningen automatiskt. Sparar vatten och pengar.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-item__icon" aria-hidden="true">🏡</span>
+            <h3>Villa &amp; sommarstuga</h3>
+            <p>Gräsmatta, rabatter och odlingslådor — särskilt populärt i Skåne apr–sep.</p>
+          </article>
+        </div>
+
+        <div class="security-package">
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Säsongsstart</span>
+            <h3 class="price-card__name">Trädgård Starter</h3>
+            <p class="price-card__desc">Automatisk bevattning med smart styrning — grundsetup.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 4 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">+ material från ca 2 000 kr</p>
+            <ul class="price-card__features">
+              <li>1 bevattningsstyrenhet (t.ex. Gardena Smart)
+                <ul>
+                  <li>Installation &amp; nätverksanslutning</li>
+                  <li>Koppling till Home Assistant</li>
+                </ul>
+              </li>
+              <li>1–2 jordfuktighetssensorer</li>
+              <li>Väderintegration (regn → pausa vattning)</li>
+              <li>2 automationer (t.ex. fukt &lt; 30% → vattna 10 min)</li>
+              <li>Genomgång &amp; 30 dagars support</li>
+            </ul>
+            <p class="price-card__total">Typiskt totalt: ca 7 000–9 000 kr</p>
+            <a href="#kontakt" class="btn btn--primary btn--block">Begär offert</a>
+          </article>
+
+          <div class="security-aside">
+            <h3>Vad vi gör — och vad som kräver partner</h3>
+            <ul class="security-aside__list security-aside__list--yes">
+              <li>Smart styrenhet &amp; sensorer</li>
+              <li>Home Assistant-integration &amp; automationer</li>
+              <li>Väderstyrning &amp; scheman per zon</li>
+              <li>Koppling till befintligt bevattningssystem</li>
+            </ul>
+            <ul class="security-aside__list security-aside__list--no">
+              <li>Grävning &amp; nya sprinklerledningar</li>
+              <li>Hydraulik &amp; rörinstallation</li>
+            </ul>
+            <p class="security-aside__note">Behöver du nytt rörnät i trädgården? Vi samarbetar med trädgårds-/bevattningspartner — <a href="#kontakt">kontakta oss</a>. Bästa tiden att boka: <strong>april–juni</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="paket">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Paket &amp; priser</span>
+          <h2 class="section__title">Tydliga paket, inga överraskningar</h2>
+          <p class="section__desc">Alla priser avser <strong>arbete</strong> (installation, konfiguration, genomgång). Hårdvara och material faktureras separat — se uppskattning per paket.</p>
+        </header>
+
+        <div class="pricing">
+          <article class="price-card">
+            <h3 class="price-card__name">Konsultation</h3>
+            <p class="price-card__desc">Perfekt om du vill veta vad som passar ditt hem.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 1 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">Ingen hårdvara ingår</p>
+            <ul class="price-card__features">
+              <li>2 timmars hembesök eller videomöte</li>
+              <li>Kartläggning av behov och budget</li>
+              <li>Protokoll- och enhetsrekommendation</li>
+              <li>Skriftlig sammanfattning</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline btn--block">Boka konsultation</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Populärast</span>
+            <h3 class="price-card__name">Starter</h3>
+            <p class="price-card__desc">Kom igång med smart hem — enkelt och säkert.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 12 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">+ material från ca 5 000 kr</p>
+            <ul class="price-card__features">
+              <li>Home Assistant Green (hårdvara, ca 2 200 kr)
+                <ul>
+                  <li>Installation &amp; grundkonfiguration</li>
+                  <li>Dashboard, backup &amp; mobilåtkomst</li>
+                  <li>Uppkoppling mot router &amp; grundtest</li>
+                  <li>SkyConnect för Zigbee/Matter, ca 370 kr (rekommenderas)</li>
+                </ul>
+              </li>
+              <li>Koppling av 5–10 enheter (sensorer, belysning)</li>
+              <li>3 automationer (t.ex. närvaro, scener)</li>
+              <li>App-konfiguration &amp; genomgång</li>
+              <li>30 dagars support ingår</li>
+            </ul>
+            <p class="price-card__total">Typiskt totalt: ca 18 000–22 000 kr</p>
+            <a href="#kontakt" class="btn btn--primary btn--block">Begär offert</a>
+          </article>
+
+          <article class="price-card">
+            <h3 class="price-card__name">Energi</h3>
+            <p class="price-card__desc">Maximera besparing med spotpris och smart styrning.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 24 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">+ material från ca 6 000 kr</p>
+            <ul class="price-card__features">
+              <li>Tibber/spotpris-integration</li>
+              <li>Värmepump + belysning automation</li>
+              <li>Energidashboard i Home Assistant</li>
+              <li>Schemaläggning efter elpris (SE3/SE4)</li>
+              <li>Uppskattning av månadsbesparing</li>
+            </ul>
+            <p class="price-card__total">Typiskt totalt: ca 31 000–35 000 kr</p>
+            <a href="#kontakt" class="btn btn--outline btn--block">Begär offert</a>
+          </article>
+
+          <article class="price-card">
+            <h3 class="price-card__name">Hela villan</h3>
+            <p class="price-card__desc">Komplett smart hem från grunden.</p>
+            <div class="price-card__price">
+              <span class="price-card__label">Arbete</span>
+              <span class="price-card__amount">fr. 49 990</span>
+              <span class="price-card__unit">kr</span>
+            </div>
+            <p class="price-card__material">+ material från ca 15 000 kr</p>
+            <ul class="price-card__features">
+              <li>Fullständig design &amp; projektplan</li>
+              <li>Home Assistant + alla integrationer</li>
+              <li>Elarbete via certifierad partner (ROT-avdrag)</li>
+              <li>Dokumentation &amp; utbildning</li>
+              <li>3 månaders supportavtal</li>
+            </ul>
+            <p class="price-card__total">Typiskt totalt: ca 65 000–80 000 kr</p>
+            <a href="#kontakt" class="btn btn--outline btn--block">Begär offert</a>
+          </article>
+        </div>
+
+        <p class="pricing__note">
+          <strong>Arbete</strong> = installation, konfiguration, integration och genomgång. <strong>Material</strong> = hårdvara (hubb, sensorer, lampor m.m.) som du köper via oss eller själv. IT-setup kan berättiga till <strong>RUT-avdrag (50%)</strong>. Elinstallationer via partner med <strong>ROT-avdrag (30%)</strong>. Resor tillkommer utanför Lund/Malmö.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Process</span>
+          <h2 class="section__title">Så jobbar vi</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <div class="step__content">
+              <h3>Kostnadsfri första kontakt</h3>
+              <p>Du berättar om ditt hem och dina önskemål — via formulär, telefon eller e-post.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <div class="step__content">
+              <h3>Konsultation &amp; offert</h3>
+              <p>Vi besöker dig i Lund, Malmö eller närliggande områden och lämnar en tydlig offert.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <div class="step__content">
+              <h3>Installation &amp; integration</h3>
+              <p>Vi sätter upp systemet, kopplar enheter och testar alla automationer tillsammans med dig.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <div class="step__content">
+              <h3>Genomgång &amp; support</h3>
+              <p>Du får en genomgång av systemet och dokumentation. Support ingår enligt ditt paket.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="omraden">
+      <div class="container">
+        <div class="areas">
+          <div class="areas__content">
+            <span class="section__label">Verksamhetsområde</span>
+            <h2 class="section__title">Vi finns i Skåne</h2>
+            <p class="areas__desc">Baserade i Lund, vi tar uppdrag i hela Skåne — särskilt Lund, Malmö, Eslöv, Höör, Landskrona, Helsingborg och närliggande orter.</p>
+            <ul class="areas__list">
+              <li>Lund</li>
+              <li>Malmö</li>
+              <li>Eslöv</li>
+              <li>Höör</li>
+              <li>Landskrona</li>
+              <li>Helsingborg</li>
+              <li>Övriga Skåne</li>
+            </ul>
+          </div>
+          <div class="areas__map" aria-hidden="true">
+            <div class="map-placeholder">
+              <span class="map-dot map-dot--lund">Lund</span>
+              <span class="map-dot map-dot--malmo">Malmö</span>
+              <span class="map-dot map-dot--helsingborg">Helsingborg</span>
+              <span class="map-ring"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info">
+            <span class="section__label">Kontakt</span>
+            <h2 class="section__title">Boka gratis konsultation</h2>
+            <p class="contact__desc">Berätta kort om ditt hem och vad du vill uppnå. Vi återkommer inom 24 timmar.</p>
+
+            <div class="contact__details">
+              <div class="contact__item">
+                <span class="contact__label">Plats</span>
+                <span>Lund, Skåne</span>
+              </div>
+              <div class="contact__item">
+                <span class="contact__label">E-post</span>
+                <a href="mailto:info@smarthemskane.se">info@smarthemskane.se</a>
+              </div>
+              <div class="contact__item">
+                <span class="contact__label">Telefon</span>
+                <a href="tel:+46721951018">072-195 10 18</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Namn</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="För- och efternamn">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="namn@email.se">
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="072-195 10 18">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="city">Ort</label>
+              <input type="text" id="city" name="city" placeholder="T.ex. Lund, Malmö">
+            </div>
+            <div class="form-group">
+              <label for="service">Intresserad av</label>
+              <select id="service" name="service">
+                <option value="">Välj tjänst...</option>
+                <option value="konsultation">Konsultation</option>
+                <option value="starter">Starter-paket</option>
+                <option value="sakerhet">Säkerhet Starter</option>
+                <option value="tradgard">Trädgård Starter</option>
+                <option value="energi">Energi-paket</option>
+                <option value="villa">Hela villan</option>
+                <option value="support">Felsökning / support</option>
+                <option value="annat">Annat</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="message" rows="4" placeholder="Beskriv kort ditt hem och vad du vill uppnå..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Skicka förfrågan</button>
+            <p class="form-privacy">Genom att skicka godkänner du vår <a href="integritet.html">integritetspolicy</a>.</p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Smart Hem <strong>Skåne</strong></span>
+        <p>Smart hem, säkerhet och trädgård — installation i Lund, Malmö och hela Skåne.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#tjanster">Tjänster</a>
+        <a href="#guide">Guide</a>
+        <a href="#sakerhet">Säkerhet</a>
+        <a href="#tradgard">Trädgård</a>
+        <a href="#paket">Paket</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="integritet.html">Integritet</a>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Smart Hem Skåne · <a href="integritet.html">Integritetspolicy</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
