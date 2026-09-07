@@ -1,4 +1,3 @@
-// Hämta nyckel gratis på https://web3forms.com (ange smarthemskane@gmail.com)
 const WEB3FORMS_ACCESS_KEY = 'd48405cb-72fc-405a-af8a-5a508cd775ed';
 
 const header = document.getElementById('header');
@@ -58,11 +57,6 @@ contactForm.addEventListener('submit', async (e) => {
 
   if (!name || !email) {
     setFormStatus('Fyll i namn och e-post.', 'error');
-    return;
-  }
-
-  if (WEB3FORMS_ACCESS_KEY === 'REPLACE_WITH_YOUR_KEY') {
-    setFormStatus('Formuläret är inte konfigurerat ännu. Kontakta oss via e-post.', 'error');
     return;
   }
 
